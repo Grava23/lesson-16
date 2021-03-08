@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1110 px;
+  max-width: 1110px;
   margin: auto;
   border: 1px solid red;
 }
@@ -369,7 +369,7 @@ template {
       -ms-flex-align: centr;
           align-items: centr;
   justifay-content: space-between;
-  padding-top: 40 px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 

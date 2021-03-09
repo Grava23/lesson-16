@@ -228,7 +228,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted Button Text;
+  outline: 1px dotted ButtonText;
 }
 
 /**
@@ -364,10 +364,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: centr;
-      -ms-flex-align: centr;
-          align-items: centr;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -396,6 +398,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  border: none;
 }
 
 .search__button {
@@ -412,9 +415,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: centr;
-      -ms-flex-align: centr;
-          align-items: centr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 

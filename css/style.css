@@ -1238,4 +1238,15 @@ template {
     width: 100%;
   }
 }
+
+@media (max-width: 320px) {
+  .newsletter__subscribe {
+    max-width: 280px;
+  }
+  .reviews__title {
+    margin-left: 25px;
+    max-width: 245px;
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

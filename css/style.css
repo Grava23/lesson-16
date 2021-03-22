@@ -894,7 +894,7 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  min-width: 65px;
+  width: 65px;
   position: absolute;
   right: 0;
   top: 0;
@@ -930,6 +930,7 @@ template {
   -ms-flex-line-pack: center;
       align-content: center;
   max-width: 730px;
+  height: 280px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -1037,6 +1038,7 @@ template {
 .reviews-slider___text {
   font-family: 'Mulish';
   font-weight: 400;
+  height: 114px;
   min-width: 537px;
   font-style: normal;
   font-weight: normal;

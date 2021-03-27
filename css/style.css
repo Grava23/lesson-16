@@ -1870,11 +1870,12 @@ template {
   }
   .footer__social-network {
     max-width: 167px;
-    max-height: 67px;
+    min-height: 67px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .footer__social-links {
+    max-height: 20px;
     margin-top: 22px;
   }
   .footer__title--inline {
@@ -1882,6 +1883,7 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-width: 167px;
+    max-height: 23px;
   }
   .footer__contact-details {
     margin-top: 0px;

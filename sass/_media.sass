@@ -267,15 +267,36 @@
             max-width: 245px
             font-size: 18px
     .footer
+        &-wrapper
+            grid-column-gap: 0px
+            grid-template-columns: repeat(1, minmax(0px, 1fr))
         &__social
             &-network
+                max-width: 167px
+                max-height: 67px
                 flex-wrap: wrap
             &-links
                 margin-top: 22px
+        &__title
+            &--inline
+                justify-content: space-between
+                min-width: 167px
+                    
         &__contact
             &-details
+                margin-top: 0px
                 max-width: 281px
             &-form
+                margin-top: 0px
+                margin-bottom: 0
                 max-width: 281px
-    
+        &__rights
+            justify-content: space-around
+            min-width: 277px
+        &__opportunities
+            margin-top: 0
+        &__opportunit
+            margin-left: 3px
+            
+
     

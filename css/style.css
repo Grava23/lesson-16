@@ -1199,6 +1199,7 @@ template {
 }
 
 .footer__contact-details {
+  margin-top: 101px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3 / 5;
@@ -1208,6 +1209,7 @@ template {
 }
 
 .footer__contact-form {
+  margin-top: 94px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3 / 5;
@@ -1345,6 +1347,7 @@ template {
 
 .footer__message {
   max-width: 539px;
+  max-height: 139px;
   background-color: #fff;
   border-radius: 4px;
   padding: 18px 23px;
@@ -1357,7 +1360,7 @@ template {
 
 .footer__message ::-webkit-input-placeholder {
   font-size: 12px;
-  width: 89px;
+  width: 50px;
   height: 15px;
   font-style: normal;
   font-weight: normal;
@@ -1367,7 +1370,7 @@ template {
 
 .footer__message :-ms-input-placeholder {
   font-size: 12px;
-  width: 89px;
+  width: 50px;
   height: 15px;
   font-style: normal;
   font-weight: normal;
@@ -1377,7 +1380,7 @@ template {
 
 .footer__message ::-ms-input-placeholder {
   font-size: 12px;
-  width: 89px;
+  width: 50px;
   height: 15px;
   font-style: normal;
   font-weight: normal;
@@ -1387,7 +1390,7 @@ template {
 
 .footer__message ::placeholder {
   font-size: 12px;
-  width: 89px;
+  width: 50px;
   height: 15px;
   font-style: normal;
   font-weight: normal;
@@ -1418,8 +1421,7 @@ template {
 }
 
 .footer__opportunities {
-  padding-right: 0;
-  padding-left: 125px;
+  padding-left: 123px;
   margin-top: 102px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1441,6 +1443,9 @@ template {
 }
 
 .footer__opportunit {
+  margin-left: 7px;
+  cursor: pointer;
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1858,18 +1863,45 @@ template {
     max-width: 245px;
     font-size: 18px;
   }
+  .footer-wrapper {
+    grid-column-gap: 0px;
+    -ms-grid-columns: (minmax(0px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
   .footer__social-network {
+    max-width: 167px;
+    max-height: 67px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .footer__social-links {
     margin-top: 22px;
   }
+  .footer__title--inline {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 167px;
+  }
   .footer__contact-details {
+    margin-top: 0px;
     max-width: 281px;
   }
   .footer__contact-form {
+    margin-top: 0px;
+    margin-bottom: 0;
     max-width: 281px;
+  }
+  .footer__rights {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-width: 277px;
+  }
+  .footer__opportunities {
+    margin-top: 0;
+  }
+  .footer__opportunit {
+    margin-left: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,20 +16,20 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Log: Best Tour Plan" class="logo__image" />
                 </a>
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
                 </form>
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
                     <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -47,6 +47,16 @@
         <div class="navbar-bottom">
             <div class="container">
                 <nav class="navbar-menu">
+                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                        <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar navbar__user navbar__user--mobile--visible">
+                        <span class="user__name user__name--light">Nathan</span>
+                    </a></li>
+                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                        <input type="text" class="search__input" placeholder="Search Location">
+                        <button class="search__button">
+                            <img src="img/search.svg" alt="Icon: search">
+                        </button>
+                    </form></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -132,7 +142,7 @@
                 <!--/.swiper-container-->
 
                 <div class="hotel-right">
-                    <div class="booking">
+                    <div class="booking booking__size">
                         <div class="booking__info">
                             <div class="booking__price">
                                 <span class="booking__start">
@@ -168,7 +178,7 @@
                         <button class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map">
+                    <div class="map map-size">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412632673433!2d98.29255281444055!3d7.890752094315357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1615829484583!5m2!1sru!2sru"
                             width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -228,8 +238,7 @@
                                 welcome us very well. Issue was only that Lift was not in working and we were allotted
                                 to 3rd floor and amenities articles were in corner of gallery which were giving bad
                                 feeling. Breakfast was good and support of the staff was also very nice. Location is not
-                                good as per atmosphere, it is very nearby most of the popular places but self location
-                                in a narrow street is not good.
+                                good as per atmosphere.
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -258,7 +267,7 @@
                                 consectetur, voluptatum officiis ullam amet? Facilis repudiandae debitis, quia, mollitia
                                 beatae tempore ea cum impedit quae reiciendis totam recusandae? Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit. Distinctio praesentium veniam reprehenderit ipsum,
-                                perspiciatis officiis itaque neque. Optio cumque eius doloribus.
+                                perspiciatis officiis itaque neque. 
                         </div>
                         <!-- /.reviews-slider__item -->
                     </div>
@@ -285,8 +294,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laboriosam incidunt
                                 voluptatem voluptas placeat. Qui id natus distinctio maxime sint repudiandae similique
                                 iusto in maiores facilis, harum aut dolorem nam! Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Tempora, illo iste aut maiores dolorum assumenda nam corporis
-                                voluptatum.
+                                adipisicing elit. Tempora, illo iste aut maiores dolorum assumenda 
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -407,7 +415,7 @@
 
 
                 <div class="footer_list footer__additional">
-                    <h3 class="footer__title ">ADDITIONAL INFORMATION</h3>
+                    <h3 class="footer__title  footer__title-additional">ADDITIONAL INFORMATION</h3>
                     <ul class="footer__ul">
                         <li class="footer__item">
                             <a href="#" class="footer__link">About Us</a>
@@ -460,13 +468,12 @@
                 <!--/.footer__list-->
 
                 <div class="footer__contact-details">
-                    <div>
                         <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
 
-                    </div>
+    
 
                     <ul class="footer__ul">
-                        <span class="footer__item footer__item-mb--2 footer__text ">Feel free to contact us by phone,
+                        <span class="footer__item  footer__text ">Feel free to contact us by phone,
                             email or by our contact
                             form
                         </span>
@@ -507,8 +514,9 @@
                         <input type="text" class="input footer__input" placeholder="Your Full Name">
                         <input type="text" class="input footer__input" placeholder="Phone Number">
                         <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <button class="button footer__button" type="submit">Send</button>
-                        <span class="footer__info">* Required Fields</span>
+                        <div class="footer__header"><button class="button footer__button" type="submit">Send</button>
+                            <span class="footer__info">* Required Fields</span></div>
+                        
                     </form>
                 </div>
 

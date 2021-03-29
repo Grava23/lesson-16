@@ -38,7 +38,7 @@
             grid-row: 3 / 5
             grid-column: 3 / 5
     &__form
-        align-items: cente r
+        align-items: center
         display: flex
         align-items: start
         justify-content: space-between
@@ -73,8 +73,6 @@
     &__icon
         &-wrapper
             min-width: 40px
-            
-            
 
     &__text
         color: $footer-text-color
@@ -97,7 +95,7 @@
         height: 50px
         margin-bottom: 15px
         flex-basis: 48%
-        ::placeholder
+        &::placeholder
             font-size: 12px
             width: 89px
             height: 15px
@@ -115,7 +113,7 @@
         flex-basis: 100%
         margin-bottom: 23px
         resize: none
-        ::placeholder
+        &::placeholder
             font-size: 12px
             width: 50px
             height: 15px
@@ -135,6 +133,11 @@
         background-color: $primary
         border: none
         border-radius: 4px
+    &__header
+        display: flex
+        justify-content: space-between
+        flex-basis: 100%
+        max-width: 539px
     &__info
         font-style: normal
         font-weight: bold

@@ -119,6 +119,7 @@
         
 @media (max-width: 768px)
     .container
+        
         max-width: 576 px
         width: 92%
     body
@@ -126,7 +127,6 @@
     .navbar
         &__mobile
             &--fixed
-                
                 position: fixed
                 left: 0
                 right: 0
@@ -138,12 +138,14 @@
                 &--hidden
                     display: none
                 &--visible
+                    
                     display: block
                     
         &__user
             flex-direction: column
             justify-content: center
         &-bottom
+            overflow: scroll
             display: none
             position: fixed
             left: 0
@@ -154,12 +156,19 @@
             &--visible 
                 display: block
         &-menu
+            
             flex-direction: column
             &__item
                 margin-bottom: 20px
                 &--mobile
                     &__visible
                         display: block
+    .search
+        &__input
+            margin-right: 0
+        &__button
+            margin-left: 0
+
     .menu
         &-button
             padding: 0

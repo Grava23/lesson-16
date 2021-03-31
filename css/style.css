@@ -1682,6 +1682,7 @@ template {
             justify-content: center;
   }
   .navbar-bottom {
+    overflow: scroll;
     display: none;
     position: fixed;
     left: 0;
@@ -1704,6 +1705,12 @@ template {
   }
   .navbar-menu__item--mobile__visible {
     display: block;
+  }
+  .search__input {
+    margin-right: 0;
+  }
+  .search__button {
+    margin-left: 0;
   }
   .menu-button {
     padding: 0;

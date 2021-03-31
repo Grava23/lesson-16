@@ -51,7 +51,7 @@
                         <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar navbar__user navbar__user--mobile--visible">
                         <span class="user__name user__name--light">Nathan</span>
                     </a></li>
-                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <form action="#" class="search navbar__search ">
+                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <form action="#" class="search navbar__search navbar__search--mobile--visible">
                         <input type="text" class="search__input" placeholder="Search Location">
                         <button class="search__button">
                             <img src="img/search.svg" alt="Icon: search">
@@ -510,10 +510,10 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title">Send us a message </h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number">
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form">
+                        <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
+                        <input type="text" class="input footer__input" placeholder="Phone Number" name="phone">
+                        <textarea class="footer__message" placeholder="Message" name="message"></textarea>
                         <div class="footer__header"><button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span></div>
                         

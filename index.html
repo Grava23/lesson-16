@@ -47,16 +47,20 @@
         <div class="navbar-bottom">
             <div class="container">
                 <nav class="navbar-menu">
-                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <a href="#" class="user navbar__user navbar__user--mobile--visible">
-                        <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar navbar__user navbar__user--mobile--visible">
-                        <span class="user__name user__name--light">Nathan</span>
-                    </a></li>
-                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <form action="#" class="search navbar__search navbar__search--mobile--visible">
-                        <input type="text" class="search__input" placeholder="Search Location">
-                        <button class="search__button">
-                            <img src="img/search.svg" alt="Icon: search">
-                        </button>
-                    </form></li>
+                    <li class="navbar-menu__item navbar-menu__item--mobile__visible"> <a href="#"
+                            class="user navbar__user navbar__user--mobile--visible">
+                            <img src="img/user-avatar.jpeg" alt="Avatar: Nathan"
+                                class="user__avatar navbar__user navbar__user--mobile--visible">
+                            <span class="user__name user__name--light">Nathan</span>
+                        </a></li>
+                    <li class="navbar-menu__item navbar-menu__item--mobile__visible">
+                        <form action="#" class="search navbar__search ">
+                            <input type="text" class="search__input" placeholder="Search Location">
+                            <button class="search__button">
+                                <img src="img/search.svg" alt="Icon: search">
+                            </button>
+                        </form>
+                    </li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -175,7 +179,7 @@
                             </a>
                         </div>
                         <!-- /.booking__call-center -->
-                        <button class="button booking__button">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
                     <div class="map map-size">
@@ -267,7 +271,7 @@
                                 consectetur, voluptatum officiis ullam amet? Facilis repudiandae debitis, quia, mollitia
                                 beatae tempore ea cum impedit quae reiciendis totam recusandae? Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit. Distinctio praesentium veniam reprehenderit ipsum,
-                                perspiciatis officiis itaque neque. 
+                                perspiciatis officiis itaque neque.
                         </div>
                         <!-- /.reviews-slider__item -->
                     </div>
@@ -294,7 +298,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laboriosam incidunt
                                 voluptatem voluptas placeat. Qui id natus distinctio maxime sint repudiandae similique
                                 iusto in maiores facilis, harum aut dolorem nam! Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Tempora, illo iste aut maiores dolorum assumenda 
+                                adipisicing elit. Tempora, illo iste aut maiores dolorum assumenda
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -468,9 +472,9 @@
                 <!--/.footer__list-->
 
                 <div class="footer__contact-details">
-                        <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+                    <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
 
-    
+
 
                     <ul class="footer__ul">
                         <span class="footer__item  footer__text ">Feel free to contact us by phone,
@@ -513,10 +517,11 @@
                     <form action="send.php" method="POST" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
                         <input type="text" class="input footer__input" placeholder="Phone Number" name="phone">
-                        <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+                        <textarea class="message footer__message"  placeholder="Message" name="message"></textarea>
                         <div class="footer__header"><button class="button footer__button" type="submit">Send</button>
-                            <span class="footer__info">* Required Fields</span></div>
-                        
+                            <span class="footer__info">* Required Fields</span>
+                        </div>
+
                     </form>
                 </div>
 
@@ -542,7 +547,30 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close">
 
+            </a>
+            <h3 class="modal__title">Send us a message </h3>
+            <form action="#" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name">
+                <input type="text" class="input modal__input" placeholder="Phone Number">
+                <input type="text" class="input modal__input" placeholder="Email">
+                <textarea class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="modal__header"><button class="button modal__button" type="submit">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </div>
+
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

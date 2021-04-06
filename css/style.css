@@ -1517,11 +1517,6 @@ template {
   height: 22px;
 }
 
-.modal {
-  height: 97vh;
-  overflow-y: auto;
-}
-
 .modal__overlay {
   z-index: 110;
   position: fixed;
@@ -1543,6 +1538,8 @@ template {
 }
 
 .modal__dialog {
+  height: 97vh;
+  overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1739,7 +1736,7 @@ template {
     -ms-flex-preferred-size: none;
         flex-basis: none;
   }
-  .modal {
+  .modal__dialog {
     height: 97vh;
     overflow-y: auto;
   }

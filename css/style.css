@@ -1538,8 +1538,7 @@ template {
 }
 
 .modal__dialog {
-  height: 97vh;
-  overflow-y: auto;
+  height: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1736,10 +1735,6 @@ template {
     -ms-flex-preferred-size: none;
         flex-basis: none;
   }
-  .modal__dialog {
-    height: 97vh;
-    overflow-y: auto;
-  }
 }
 
 @media (max-width: 992px) {
@@ -1890,7 +1885,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576 px;
+    max-width: 576px;
     width: 92%;
   }
   body {
@@ -2186,6 +2181,11 @@ template {
   .footer__badge {
     min-width: none;
   }
+  .modal__dialog {
+    overflow-y: auto;
+    min-width: 320px;
+    max-height: 90vh;
+  }
   .modal__button {
     max-width: 80px;
     min-width: 80px;
@@ -2340,11 +2340,12 @@ template {
         flex-wrap: wrap;
   }
   .modal__dialog {
+    max-height: 540px;
     padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (80px)[7];
-        grid-template-rows: repeat(7, 80px);
+    -ms-grid-rows: (80px)[6];
+        grid-template-rows: repeat(6, 80px);
     -ms-grid-columns: 50px minmax(200px, 1fr) 50px;
         grid-template-columns: 50px minmax(200px, 1fr) 50px;
     min-width: 320px;

@@ -1538,13 +1538,16 @@ template {
 }
 
 .modal__dialog {
-  height: 500px;
+  height: 535px;
   position: fixed;
   top: 50%;
   left: 50%;
   max-width: 478px;
-  padding: 33px 88px;
-  background: #0a223a;
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  background: #000000;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2340,12 +2343,12 @@ template {
         flex-wrap: wrap;
   }
   .modal__dialog {
-    max-height: 540px;
+    height: 515px;
     padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (80px)[6];
-        grid-template-rows: repeat(6, 80px);
+    -ms-grid-rows: (80px)[5] 40px 40px;
+        grid-template-rows: repeat(5, 80px) 40px 40px;
     -ms-grid-columns: 50px minmax(200px, 1fr) 50px;
         grid-template-columns: 50px minmax(200px, 1fr) 50px;
     min-width: 320px;
@@ -2360,6 +2363,7 @@ template {
     grid-column: 2 / 3;
   }
   .modal__form {
+    margin-top: 0;
     min-width: 100px;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
@@ -2376,22 +2380,27 @@ template {
   .modal__header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 10px;
   }
   .modal__button {
+    position: fixed;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    position: absolute;
     min-width: 100%;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    grid-row: 6 / 7;
-  }
-  .modal__info {
-    margin-top: 15px;
-    max-width: 240px;
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
+  }
+  .modal__info {
+    margin-bottom: 65px;
+    max-width: 240px;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6 / 7;
   }
 }
 
@@ -2432,7 +2441,7 @@ template {
   }
   .footer__contact-form {
     margin-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     max-width: 281px;
   }
   .footer__input {
@@ -2456,11 +2465,10 @@ template {
   .footer__opportunit {
     margin-left: 3px;
   }
-  .modal {
-    overflow: scroll;
-  }
   .modal__dialog {
     overflow: scroll;
+    overflow-y: auto;
+    max-height: 90vh;
     min-width: 290px;
     max-width: 320px;
     -ms-grid-columns: 40px minmax(180px, 1fr) 40px;

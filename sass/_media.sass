@@ -438,7 +438,6 @@
                 grid-row: 6
                 grid-column: 1
             &-form
-               
                 grid-row: 7
                 grid-column: 1
         &__form
@@ -463,18 +462,19 @@
             flex-wrap: wrap
     .modal
         &__dialog
-            max-height: 540px
+            height: 515px
             padding: 0
             display: grid
-            grid-template-rows: repeat(6, 80px)
+            grid-template-rows: repeat(5, 80px) 40px 40px
             grid-template-columns: 50px minmax(200px, 1fr) 50px
             min-width: 320px
             max-width: 480px
             align-items: center
-        
+           
         &__title
             grid-column: 2 / 3
         &__form
+            margin-top: 0
             min-width: 100px
             grid-row: 3 / 6
             grid-column: 2 / 3   
@@ -482,15 +482,19 @@
             grid-column: 2 / 3
         &__header
             flex-wrap: wrap
+            padding-bottom: 10px
         &__button
-            min-width: 100%
-            
+            position: fixed      
+            margin-bottom: 60px
+            margin-top: 70px
+            position: absolute
+            min-width: 100%  
             grid-column: 2 / 3
-            grid-row: 6 / 7
-        &__info
-            margin-top: 15px
-            max-width: 240px
             grid-row: 7 / 8
+        &__info
+            margin-bottom: 65px
+            max-width: 240px
+            grid-row:  6 / 7 
 @media ( max-width: 320px)
     .newsletter 
         &__subscribe
@@ -523,10 +527,8 @@
                 margin-top: 0px
                 max-width: 281px
             &-form
-            
-                
                 margin-top: 0px
-                margin-bottom: 0
+                margin-bottom: 0px
                 max-width: 281px
         &__input
             min-width: 280px
@@ -544,9 +546,10 @@
         &__opportunit
             margin-left: 3px
     .modal
-        overflow: scroll
         &__dialog
             overflow: scroll
+            overflow-y: auto
+            max-height: 90vh
             min-width: 290px
             max-width: 320px
             grid-template-columns: 40px minmax(180px, 1fr) 40px
